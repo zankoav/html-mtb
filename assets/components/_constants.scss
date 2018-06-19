@@ -1,0 +1,29 @@
+
+$MAX-WIDTH: 1200px;
+
+$MEDIA: (
+        SM:768px,
+        MD:1024px,
+        LG:1280px
+);
+
+@mixin glass {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .8);
+}
+
+@mixin button {
+
+    &:hover {
+
+    }
+
+    &:active {
+
+    }
+}
