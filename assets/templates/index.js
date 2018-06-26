@@ -1,3 +1,2 @@
 import './../components/base/base';
-
-console.log('index ready');
+import './../components/footer/footer';

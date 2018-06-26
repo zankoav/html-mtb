@@ -1,0 +1,77 @@
+@import './../constants';
+
+.footer {
+  background-color: $WHITE;
+
+
+  &__logo {
+    width: 142px;
+    height: 50px;
+  }
+
+  &__social-img {
+    width: 36px;
+    height: 36px;
+    margin: 1rem .5rem;
+  }
+
+  &__description {
+    font-size: 12px;
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+  }
+
+  @media (min-width: map-get($MEDIA, SM)) {
+
+    &__items {
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+    }
+
+    &__item-logo {
+      display: flex;
+      margin-right: 2rem;
+    }
+
+    &__item-social {
+      display: flex;
+      order: 2;
+      margin-left: 1rem;
+    }
+
+    &__description {
+      order: 1;
+    }
+
+    &__social-link {
+      margin-left: 1rem;
+    }
+  }
+
+  @media (min-width: map-get($MEDIA, LG)) {
+
+    &__social-img {
+      width: 24px;
+      height: 24px;
+    }
+
+    &__item-social {
+      margin-left: 0;
+    }
+
+    &__social-img {
+      margin: 0;
+    }
+
+    &__social-link {
+      margin-left: .75rem;
+    }
+  }
+}
+
