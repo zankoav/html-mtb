@@ -1,4 +1,4 @@
-
+$WHITE: #fff;
 $MAX-WIDTH: 1200px;
 
 $MEDIA: (
@@ -8,22 +8,22 @@ $MEDIA: (
 );
 
 @mixin glass {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, .8);
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, .8);
 }
 
 @mixin button {
 
-    &:hover {
+  &:hover {
 
-    }
+  }
 
-    &:active {
+  &:active {
 
-    }
+  }
 }
