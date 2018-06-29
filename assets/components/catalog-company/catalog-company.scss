@@ -1,0 +1,35 @@
+@import './../constants';
+
+.catalog-company {
+  background-color: $GREY;
+
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -.25rem;
+    max-width: initial;
+    padding: 2.5rem 0;
+  }
+
+  &__item {
+    padding: .25rem;
+    max-width: 50%;
+    flex: 1 0 50%;
+
+    @media (min-width: map-get($MEDIA, SM)) {
+      max-width: 33.333333%;
+      flex: 1 0 33.333333%;
+    }
+
+    @media (min-width: map-get($MEDIA, MD)) {
+      max-width: 25%;
+      flex: 1 0 25%;
+    }
+
+    @media (min-width: map-get($MEDIA, LG)) {
+      max-width: 20%;
+      flex: 1 0 20%;
+    }
+  }
+}
+
