@@ -1,0 +1,47 @@
+@import './../constants';
+
+.category {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  transition: all 1s ease-out;
+  &:hover {
+    transform: scale(1.05);
+  }
+  &__img {
+    display: block;
+    border: 1px solid white;
+    width: 100%;
+    height: auto;
+  }
+
+  &__caption {
+    position: absolute;
+    color: $WHITE;
+    bottom: 0;
+    left: 0;
+    padding: 8px;
+    font-size: 12px;
+    width: 100%;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: block;
+    min-height: 50px;
+
+    @media (min-width: map-get($MEDIA, SM)) {
+      font-size: 14px;
+      min-height: 65px;
+      padding-left: 1.25rem;
+      padding-right: 3rem;
+    }
+
+    @media (min-width: map-get($MEDIA, MD)) {
+      font-size: 17px;
+      min-height: 70px;
+    }
+
+    @media (min-width: map-get($MEDIA, LG)) {
+      font-size: 18px;
+    }
+  }
+}
