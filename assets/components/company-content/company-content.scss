@@ -1,0 +1,123 @@
+@import './../constants';
+
+.company-content {
+    flex: 1 0 auto;
+    background: linear-gradient(45deg, $GREY, #DEDEDE 80%, #D8D8D8 90%);
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        color: $DARK;
+        height: 100%;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        color: $DARK-GRAY;
+        @media (min-width: map_get($MEDIA, SM)) {
+            flex-direction: row;
+        }
+
+    }
+
+    &__left {
+        width: 100%;
+
+        @media (min-width: map_get($MEDIA, SM)) {
+            width: 240px;
+        }
+    }
+
+    &__icon-wrapper {
+        background-color: $WHITE;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+        margin-top: 2rem;
+        min-height: 200px;
+    }
+
+    &__contacts-wrapper {
+        display: flex;
+        padding: 1.5rem 0;
+        font-size: 14px;
+        justify-content: space-between;
+        @media (min-width: map_get($MEDIA, SM)) {
+            font-size: 18px;
+            flex-direction: column;
+        }
+    }
+
+    &__contacts-phone {
+
+        margin: 1.5rem 0;
+        &::before {
+            content: 'Телефон:';
+            display: block;
+        }
+    }
+
+    &__contacts-site {
+        margin: 1.5rem 0;
+        &::before {
+            content: 'Сайт компании:';
+            display: block;
+        }
+    }
+
+    &__right {
+        flex: 1;
+
+        @media (min-width: map_get($MEDIA, SM)) {
+            padding-top: 2.75rem;
+            padding-left: 1.75rem;
+        }
+    }
+
+    &__title {
+        font-size: 23px;
+        color: $DARK-BLUE;
+        font-weight: 600;
+        margin-bottom: 2rem;
+
+        @media (min-width: map_get($MEDIA, SM)) {
+            font-size: 36px;
+        }
+    }
+
+    &__payment {
+        margin-bottom: 1rem;
+    }
+
+    &__about-company, &__about-products {
+        font-size: 15px;
+        color: $DARK;
+        margin-bottom: 1rem;
+        @media (min-width: map_get($MEDIA, SM)) {
+            font-size: 18px;
+        }
+        &::before {
+            content: 'О компании:';
+            display: block;
+            font-size: 18px;
+            color: $DARK-GRAY;
+            margin: 1rem 0;
+
+            @media (min-width: map_get($MEDIA, SM)) {
+                margin: 2rem 0;
+                font-size: 24px;
+            }
+        }
+    }
+
+    &__about-products {
+        margin-bottom: 3rem;
+        &::before {
+            content: 'О товарах:';
+        }
+    }
+
+}

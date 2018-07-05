@@ -1,0 +1,129 @@
+@import './../constants';
+@import "./../../../node_modules/swiper/dist/css/swiper.min.css";
+
+.slider-first {
+    display: flex;
+    align-items: flex-end;
+    margin-top: 200px;
+
+    &__swiper {
+        max-width: 70%;
+        flex: 1 0 70%;
+        padding-right: 2rem;
+    }
+
+    &__rout {
+        position: relative;
+        max-width: 30%;
+        flex: 1 0 30%;
+        border-left: 2px solid $GRAY-LIGHT;
+        padding-left: 2rem;
+        display: flex;
+        height: 130px;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 4rem;
+
+        &--second{
+            height: 280px;
+            margin-bottom: 3rem;
+            justify-content: space-around;
+        }
+    }
+
+    &__footer {
+        margin-top: 6rem;
+    }
+
+    &__title {
+        width: 120px;
+        font-size: 30px;
+        color: $DARK-GRAY;
+        line-height: 1;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &_size_full {
+            width: initial;
+        }
+
+        &_deactivated {
+            display: none;
+        }
+    }
+
+    &__item {
+        display: flex;
+        margin: 1rem 0;
+        color: $DARK-GRAY;
+        font-size: 18px;
+    }
+
+    &__item-img {
+        width: 50px;
+        height: 40px;
+        margin-right: 3rem;
+    }
+
+    &__item-description {
+        flex: 1;
+    }
+
+    &__next-arrow{
+        width: 30px;
+    }
+
+    .text {
+        margin-top: 3rem;
+
+        &__img {
+            width: 100%;
+        }
+    }
+
+    .swiper-pagination {
+        @media (min-width: map_get($MEDIA, SM)) {
+            display: none;
+        }
+
+        .swiper-pagination-bullet-active {
+            background: $DARK-BLUE;
+        }
+    }
+
+    .swiper-button-next.swiper-button-white {
+        background-image: url("./../../icons/right-arrow-blue.svg");
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    .subtitle, .title {
+        line-height: .9;
+        color: $DARK-BLUE;
+        font-size: 36px;
+
+        &--red{
+            color: $RED;
+        }
+    }
+
+    .subtitle {
+        &--gray {
+            color: $DARK-GRAY;
+            line-height: 1.1;
+        }
+    }
+
+    .title {
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 72px;
+
+
+
+    }
+
+}

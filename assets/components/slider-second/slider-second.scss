@@ -1,0 +1,14 @@
+@import './../constants';
+
+.slider-second{
+
+    .swiper-pagination{
+        @media (min-width: map_get($MEDIA, SM)) {
+            display: none;
+        }
+
+        .swiper-pagination-bullet-active {
+            background: $RED;
+        }
+    }
+}

@@ -1,57 +1,73 @@
 @import './../constants';
 
-body {
-  font-family: 'Open Sans', sans-serif;
-}
-
 .catalog {
-  background-color: dimgrey;
-  padding: 2rem 0;
+    background: url("./../../icons/catalog/bg-catalog-min.jpg") no-repeat;
+    background-size: cover;
+    padding: 2rem 0;
 
-  &__items {
-
-  }
-
-  &__caption {
-    font-size: 36px;
-    color: #004f9e;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-
-  &__description {
-    font-size: 18px;
-    color: #004f9e;
-    margin-bottom: 2rem;
-  }
-
-  &__wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 -.25rem;
-    max-width: initial;
-  }
-
-  &__item {
-    padding: .25rem;
-    max-width: 50%;
-    flex: 1 0 50%;
-    transition: 1s ;
-
-    @media (min-width: map-get($MEDIA, SM)) {
-      max-width: 33.333333%;
-      flex: 1 0 33.333333%;
+    &--bg-clear{
+        background:none;
     }
 
-    @media (min-width: map-get($MEDIA, MD)) {
-      max-width: 25%;
-      flex: 1 0 25%;
+    &--no-mobile{
+        display:none;
+        @media (min-width: map-get($MEDIA, SM)) {
+            display:block;
+        }
     }
 
-    @media (min-width: map-get($MEDIA, LG)) {
-      max-width: 20%;
-      flex: 1 0 20%;
+    &__caption {
+        font-size: 36px;
+        color: $DARK-BLUE;
+        font-weight: bold;
+        text-transform: uppercase;
+
+        &--only-mobile{
+            @media (min-width: map-get($MEDIA, SM)) {
+                display:none;
+            }
+        }
     }
-  }
+
+    &__description {
+        font-size: 18px;
+        color: $DARK-BLUE;
+        margin-bottom: 2rem;
+
+        &--only-mobile{
+            @media (min-width: map-get($MEDIA, SM)) {
+                display:none;
+            }
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -.25rem;
+        max-width: initial;
+    }
+
+    &__item {
+        padding: .25rem;
+        max-width: 50%;
+        flex: 1 0 50%;
+        transition: 1s;
+
+        @media (min-width: map-get($MEDIA, SM)) {
+            max-width: 33.333333%;
+            flex: 1 0 33.333333%;
+        }
+
+        @media (min-width: map-get($MEDIA, MD)) {
+            max-width: 25%;
+            flex: 1 0 25%;
+        }
+
+        @media (min-width: map-get($MEDIA, LG)) {
+            max-width: 20%;
+            flex: 1 0 20%;
+        }
+    }
 }
 

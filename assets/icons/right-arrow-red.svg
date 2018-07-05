@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="47px" height="73px" viewBox="0 0 47 73" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>&gt;</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M0.582568676,7.75229397 L7.91743132,0.417431324 L40.4174313,32.9174313 L8.75229397,64.5825687 L1.41743132,57.247706 L25.747706,32.9174313 L0.582568676,7.75229397 Z" id="path-1"></path>
+        <filter x="-21.3%" y="-7.0%" width="142.7%" height="128.1%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.123188406 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Main-1-Desktop" transform="translate(-1239.000000, -1787.000000)">
+            <g id="Page-3---content" transform="translate(78.000000, 1601.000000)">
+                <g id="&gt;" transform="translate(1164.000000, 186.000000)">
+                    <g id="Combined-Shape">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <use fill="#D0021B" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

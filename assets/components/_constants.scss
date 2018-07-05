@@ -1,6 +1,14 @@
 $WHITE: #fff;
 $MAX-WIDTH: 1200px;
 $GREY: #f7f7f7;
+$GREY-LL: #C9CACA;
+$GRAY-LIGHT: #979797;
+$DARK-GRAY: #7D8798;
+$DARK: #4A4A4A;
+$RED: #D0021B;
+$DARK-BLUE: #004f9e;
+$BLUE-PAYMENT: rgba(#80C3F3, 0.82);
+
 $MEDIA: (
         SM:768px,
         MD:1024px,
@@ -8,22 +16,84 @@ $MEDIA: (
 );
 
 @mixin glass {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(0, 0, 0, .8);
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .8);
 }
 
 @mixin button {
 
-  &:hover {
+    color: $WHITE;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 66px;
+    margin: 2rem auto;
+    width: 240px;
+    text-align: center;
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, .5);
 
-  }
+    &::after {
+        transform: rotate(-8deg);
+        transform-origin: left center;
+        transition: all .4s;
+    }
 
-  &:active {
+    &:hover {
+        &::after {
+            transform: rotate(0deg);
+        }
+    }
 
-  }
+    @media (min-width: map-get($MEDIA, SM)) {
+        margin: 0 2rem 0 0;
+    }
+
+    &--red {
+        background: radial-gradient(circle at 50% -175%, rgba(#F38086, .81), rgba(#994040, .81));
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: -50px;
+            height: 100px;
+            width: 132px;
+            background: url("./../icons/mt-red.svg") no-repeat;
+            background-size: contain;
+        }
+    }
+
+    &--blue {
+        background: radial-gradient(circle at 50% -175%, rgba(#80C3F3, .81), rgba(#4E739E, .81));
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: -50px;
+            height: 100px;
+            width: 132px;
+            background: url("./../icons/mt-blue.svg") no-repeat;
+            background-size: contain;
+        }
+    }
+
+    &--gray {
+        background: radial-gradient(circle at 50% -175%, rgba(#D8D8D8, .81), rgba(#A7A7A7, .81));
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: -50px;
+            height: 100px;
+            width: 132px;
+            background: url("./../icons/mt-gray.svg") no-repeat;
+            background-size: contain;
+        }
+    }
 }

@@ -1,0 +1,38 @@
+@import './../constants';
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: map-get($MEDIA, SM)) {
+        flex-direction: row;
+    }
+
+    &__item {
+        @include button;
+    }
+
+    &__item-title {
+        text-transform: uppercase;
+        line-height: 1;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    &__item-subtitle {
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    &--main{
+        margin: 1rem 0 5rem;
+    }
+
+    &--secondary{
+        margin: 1rem 0 -1rem;
+
+        @media (min-width: map-get($MEDIA, SM)) {
+            margin: 1rem 0;
+        }
+    }
+}
