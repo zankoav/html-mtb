@@ -1,18 +1,19 @@
 @import './../constants';
 
 .catalog {
+    position: relative;
     background: url("./../../icons/catalog/bg-catalog-min.jpg") no-repeat;
     background-size: cover;
     padding: 2rem 0;
 
-    &--bg-clear{
-        background:none;
+    &--bg-clear {
+        background: none;
     }
 
-    &--no-mobile{
-        display:none;
+    &--no-mobile {
+        display: none;
         @media (min-width: map-get($MEDIA, SM)) {
-            display:block;
+            display: block;
         }
     }
 
@@ -22,9 +23,9 @@
         font-weight: bold;
         text-transform: uppercase;
 
-        &--only-mobile{
+        &--only-mobile {
             @media (min-width: map-get($MEDIA, SM)) {
-                display:none;
+                display: none;
             }
         }
     }
@@ -34,9 +35,9 @@
         color: $DARK-BLUE;
         margin-bottom: 2rem;
 
-        &--only-mobile{
+        &--only-mobile {
             @media (min-width: map-get($MEDIA, SM)) {
-                display:none;
+                display: none;
             }
         }
     }

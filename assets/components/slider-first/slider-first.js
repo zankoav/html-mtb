@@ -16,20 +16,6 @@ let firstSwiper = new Swiper('.first-swiper-js', {
     },
 });
 
-let secondSwiper = new Swiper('.second-swiper-js', {
-    speed: 600,
-    spaceBetween: 30,
-    parallax: true,
-    loop: true,
-    pagination: {
-        el: '.second-swiper-pagination-js',
-        clickable: true,
-    },
-    navigation: {
-        nextEl: '.second-swiper-next-js'
-    },
-});
-
 let currentIndex = firstSwiper.realIndex;
 
 

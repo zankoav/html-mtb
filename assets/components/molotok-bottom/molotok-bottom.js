@@ -1,0 +1,1 @@
+import './molotok-bottom.scss';

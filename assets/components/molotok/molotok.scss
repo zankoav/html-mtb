@@ -1,0 +1,25 @@
+@import './../constants';
+
+.molotok{
+    position: absolute;
+    top: 52vh;
+    right: 0;
+    width: 85%;
+
+    @media (min-width: map-get($MEDIA, SM)) {
+        top: 17%;
+        right: -5%;
+        width: 65%;
+    }
+
+    @media (min-width: map-get($MEDIA, MD)) {
+        top: 10%;
+        right: -5%;
+        width: 45%;
+    }
+
+    @media (min-width: map-get($MEDIA, LG)) {
+        top: 5%;
+        right: 0;
+    }
+}

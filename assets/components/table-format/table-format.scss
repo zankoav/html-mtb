@@ -2,12 +2,20 @@
 
 .table-format {
     color: $DARK-GRAY;
-    font-size: 14px;
+    font-size: 12px;
+    display: none;
+
+    @media (min-width: map_get($MEDIA, SM)) {
+        display: block;
+    }
+    @media (min-width: map_get($MEDIA, MD)) {
+        font-size: 12px;
+    }
 
     &__line {
         display: flex;
 
-        &:nth-child(even){
+        &:nth-child(even) {
             background-color: $GREY-LL;
         }
 
@@ -21,17 +29,15 @@
         flex-direction: column;
         justify-content: center;
 
-        &--max{
+        &--max {
             max-width: 75%;
             flex: 1 0 75%;
         }
 
-        &--header{
+        &--header {
             justify-content: initial;
         }
     }
 
-    @media (min-width: map-get($MEDIA, SM)) {
-    }
 
 }

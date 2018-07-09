@@ -12,7 +12,10 @@ $BLUE-PAYMENT: rgba(#80C3F3, 0.82);
 $MEDIA: (
         SM:768px,
         MD:1024px,
-        LG:1280px
+        LG:1280px,
+        LLG:1366px,
+        HD:1920px,
+        XL:2560px
 );
 
 @mixin glass {
@@ -52,6 +55,10 @@ $MEDIA: (
     }
 
     @media (min-width: map-get($MEDIA, SM)) {
+        margin: 2rem 0;
+    }
+
+    @media (min-width: map-get($MEDIA, MD)) {
         margin: 0 2rem 0 0;
     }
 

@@ -91,7 +91,12 @@
     &__description {
         font-size: 20px;
         color: $DARK-BLUE;
-        margin-bottom: 2rem;
+        margin-bottom: 1.5rem;
+
+
+        @media (min-width: map-get($MEDIA, SM)) {
+            margin-bottom: 2rem;
+        }
 
         @media (min-width: map-get($MEDIA, MD)) {
             font-size: 26px;
@@ -100,7 +105,12 @@
     }
 
     &__offer {
-        margin: 2rem 0 5rem;
+        margin: 40rem 0 5rem;
+
+        @media (min-width: map-get($MEDIA, SM)) {
+            margin: 2rem 0 5rem;
+        }
+
     }
 
     &__offer-item {

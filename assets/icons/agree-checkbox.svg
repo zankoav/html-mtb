@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Misc/Rounded Checkbox</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Form-Mobile-Portrait" transform="translate(-30.000000, -447.000000)">
+            <g id="Group" transform="translate(28.000000, 32.000000)">
+                <g id="Misc/Rounded-Checkbox" transform="translate(2.000000, 415.000000)">
+                    <circle id="Background" fill="#007AFF" fill-rule="evenodd" cx="11" cy="11" r="11"></circle>
+                    <polyline id="Check" stroke="#FFFFFF" stroke-width="1" points="5 11.5 8.5 15 16.5 7"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

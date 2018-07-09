@@ -1,0 +1,44 @@
+@import './../constants';
+
+.back {
+    position: absolute;
+    top: 168vw;
+    left: -100%;
+    width: 350%;
+    height: 1110vw;
+    max-width: initial;
+    transform: rotate(10deg);
+    background: linear-gradient(to bottom, transparent, $GREY, $GREY, $GREY, transparent);
+
+    @media (min-width: map-get($MEDIA, SM)) {
+        left: -20%;
+        width: 150%;
+        top: 104vw;
+        height: 287vw;
+    }
+
+    @media (min-width: map-get($MEDIA, MD)) {
+        top: 46vw;
+        height: 223vw;
+    }
+
+    @media (min-width: map-get($MEDIA, LG)) {
+        top: 48vw;
+        height: 177vw;
+    }
+
+    @media (min-width: map-get($MEDIA, LLG)) {
+        top: 44vw;
+        height: 145vw;
+    }
+
+    @media (min-width: map-get($MEDIA, HD)) {
+        top: 39vw;
+        height: 105vw;
+    }
+
+    @media (min-width: map-get($MEDIA, XL)) {
+        top: 38vw;
+        height: 67vw;
+    }
+}

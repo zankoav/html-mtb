@@ -4,8 +4,17 @@
     display: flex;
     flex-direction: column;
 
-    @media (min-width: map-get($MEDIA, SM)) {
+    @media (min-width: map-get($MEDIA, MD)) {
         flex-direction: row;
+    }
+
+    &--row{
+        @media (min-width: map-get($MEDIA, SM)) {
+            flex-direction: row;
+            .buttons__item{
+                margin: 0 2rem 0 0;
+            }
+        }
     }
 
     &__item {

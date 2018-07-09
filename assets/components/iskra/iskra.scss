@@ -1,0 +1,44 @@
+@import './../constants';
+
+.iskra{
+    position: absolute;
+    width: 50%;
+    height: 50vh;
+    top:0;
+
+    &--1{
+        left: 0;
+    }
+
+    &--2{
+        right: 0;
+        top:10vh;
+    }
+
+    &--3{
+        left: 0;
+    }
+
+    &--4{
+        right: 0;
+        top:20vh;
+    }
+
+    @media (min-width: map-get($MEDIA, SM)) {
+    }
+
+    @media (min-width: map-get($MEDIA, MD)) {
+    }
+
+    @media (min-width: map-get($MEDIA, LG)) {
+    }
+
+    @media (min-width: map-get($MEDIA, LLG)) {
+    }
+
+    @media (min-width: map-get($MEDIA, HD)) {
+    }
+
+    @media (min-width: map-get($MEDIA, XL)) {
+    }
+}
