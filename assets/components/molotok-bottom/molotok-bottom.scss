@@ -1,0 +1,36 @@
+@import './../constants';
+
+.molotok-bottom{
+    position: absolute;
+    right: 0;
+    top: -107px;
+    width: 550px;
+    max-width: initial;
+
+    @media (min-width: map-get($MEDIA, SM)) {
+        top: -149px;
+        right: -65px;
+        width: 100%;
+    }
+
+    @media (min-width: map-get($MEDIA, MD)) {
+        right: 0;
+        top: -160px;
+        width: 80%;
+    }
+
+    @media (min-width: map-get($MEDIA, LG)) {
+        top: -196px;
+        width: 1000px;
+    }
+
+    @media (min-width: map-get($MEDIA, HD)) {
+        top: -261px;
+        width: 70%;
+    }
+
+    @media (min-width: map-get($MEDIA, XL)) {
+        width: 60%;
+        top: -300px;
+    }
+}

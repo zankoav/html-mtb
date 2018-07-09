@@ -1,0 +1,1 @@
+import './nakovalny.scss';

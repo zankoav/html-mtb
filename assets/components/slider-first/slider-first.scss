@@ -1,0 +1,204 @@
+@import './../constants';
+@import "./../../../node_modules/swiper/dist/css/swiper.min.css";
+
+.slider-first {
+    display: flex;
+    align-items: flex-end;
+    margin-top: 200px;
+
+    @media (min-width: map_get($MEDIA, LG)) {
+        margin-top: 350px;
+    }
+
+    @media (min-width: map_get($MEDIA, LLG)) {
+        margin-top: 240px;
+    }
+
+    @media (min-width: map_get($MEDIA, HD)) {
+        margin-top: 340px;
+    }
+
+    @media (min-width: map_get($MEDIA, XL)) {
+        margin-top: 300px;
+    }
+
+    &__swiper {
+        max-width: 100%;
+        flex: 1 0 100%;
+
+        @media (min-width: map_get($MEDIA, SM)) {
+            max-width: 70%;
+            flex: 1 0 70%;
+            padding-right: 2rem;
+        }
+    }
+
+    &__rout {
+        position: relative;
+        max-width: 30%;
+        flex: 1 0 30%;
+        border-left: 2px solid $GRAY-LIGHT;
+        padding-left: 2rem;
+        height: 130px;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 4rem;
+        display: none;
+
+        @media (min-width: map_get($MEDIA, SM)) {
+            display: flex;
+
+        }
+    }
+
+    &__footer {
+        margin-top: 6rem;
+    }
+
+    &__title {
+        width: 120px;
+        font-size: 18px;
+        color: $DARK-GRAY;
+        line-height: 1;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &_size_full {
+            width: initial;
+        }
+
+        &_deactivated {
+            display: none;
+        }
+
+        @media (min-width: map_get($MEDIA, MD)) {
+            font-size: 24px;
+
+        }
+
+        @media (min-width: map_get($MEDIA, LG)) {
+            font-size: 30px;
+
+        }
+    }
+
+    &__item {
+        display: flex;
+        margin: 3rem 0;
+        color: $DARK-GRAY;
+        font-size: 14px;
+
+
+        @media (min-width: map_get($MEDIA, SM)) {
+            font-size: 18px;
+            margin: 1rem 0;
+        }
+    }
+
+    &__item-img {
+        width: 37px;
+        height: 30px;
+        margin-right: 1rem;
+
+        @media (min-width: map_get($MEDIA, SM)) {
+            width: 50px;
+            height: 40px;
+            margin-right: 3rem;
+        }
+    }
+
+    &__item-description {
+        flex: 1;
+    }
+
+    &__next-arrow{
+        width: 30px;
+    }
+
+    .text {
+        margin-top: 1rem;
+
+        @media (min-width: map_get($MEDIA, SM)) {
+            margin-top: 3rem;
+        }
+
+        &__img {
+            width: 100%;
+            display: none;
+
+            @media (min-width: map_get($MEDIA, SM)) {
+                display: block;
+            }
+        }
+
+        &__img-M {
+            display: block;
+
+            @media (min-width: map_get($MEDIA, SM)) {
+                display: none;
+            }
+        }
+    }
+
+    .swiper-pagination {
+        @media (min-width: map_get($MEDIA, SM)) {
+            display: none;
+        }
+
+        .swiper-pagination-bullet-active {
+            background: $DARK-BLUE;
+        }
+    }
+
+    .swiper-container{
+        padding-bottom: 3rem;
+    }
+
+    .swiper-button-next.swiper-button-white {
+
+        background-image: url("./../../icons/arrow-gray.png");
+
+        &:hover{
+            background-image: url("./../../icons/right-arrow-blue.svg");
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    .subtitle, .title {
+        line-height: .9;
+        color: $DARK-BLUE;
+        font-size: 22px;
+
+        @media (min-width: map_get($MEDIA, SM)) {
+            font-size: 36px;
+        }
+    }
+
+    .subtitle {
+        &--gray {
+            color: $DARK-GRAY;
+            line-height: 1.1;
+        }
+    }
+
+    .title {
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 31px;
+
+
+        @media (min-width: map_get($MEDIA, SM)) {
+            font-size: 48px;
+        }
+
+        @media (min-width: map_get($MEDIA, MD)) {
+            font-size: 72px;
+        }
+
+    }
+
+}

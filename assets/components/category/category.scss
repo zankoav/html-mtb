@@ -1,47 +1,82 @@
 @import './../constants';
 
 .category {
-  display: block;
-  position: relative;
-  overflow: hidden;
-  transition: all 1s ease-out;
-  &:hover {
-    transform: scale(1.05);
-  }
-  &__img {
     display: block;
-    border: 1px solid white;
-    width: 100%;
-    height: auto;
-  }
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(to bottom, rgba(84, 132, 153, .22), rgba(6, 25, 29, .74));
 
-  &__caption {
-    position: absolute;
-    color: $WHITE;
-    bottom: 0;
-    left: 0;
-    padding: 8px;
-    font-size: 12px;
-    width: 100%;
-    font-weight: 700;
-    text-transform: uppercase;
-    display: block;
-    min-height: 50px;
+    &--small {
+        transition: all .4s ease-out;
+        height: 65px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow:1px 2px 2px $DARK;
 
-    @media (min-width: map-get($MEDIA, SM)) {
-      font-size: 14px;
-      min-height: 65px;
-      padding-left: 1.25rem;
-      padding-right: 3rem;
+        &:hover {
+            transform: scale(1.025);
+            background: linear-gradient(to bottom, rgba(243, 128, 134, .67), rgba(153, 64, 64, .67));
+        }
+
+        .category__img {
+            border: none;
+            width: auto;
+            height: 100%;
+            flex: 1;
+        }
+
+        .category__caption {
+            order: -1;
+            font-size: 14px;
+            line-height: 22px;
+            min-height: initial;
+            font-weight: 500;
+            position: initial;
+            padding: 0 .5rem;
+        }
     }
 
-    @media (min-width: map-get($MEDIA, MD)) {
-      font-size: 17px;
-      min-height: 70px;
+    &--big {
+        border: 1px solid white;
+        transition: border-color .4s ease-out;
+        &:hover {
+            border-color: $RED;
+        }
     }
 
-    @media (min-width: map-get($MEDIA, LG)) {
-      font-size: 18px;
+    &__img {
+        display: block;
+        width: 100%;
+        height: auto;
     }
-  }
+
+    &__caption {
+        position: absolute;
+        color: $WHITE;
+        bottom: 0;
+        left: 0;
+        padding: 8px;
+        font-size: 12px;
+        width: 100%;
+        font-weight: 700;
+        text-transform: uppercase;
+        display: block;
+        min-height: 50px;
+
+        @media (min-width: map-get($MEDIA, SM)) {
+            font-size: 16px;
+            min-height: 65px;
+            padding-left: 1.25rem;
+            padding-right: 3rem;
+        }
+
+        @media (min-width: map-get($MEDIA, MD)) {
+            min-height: 70px;
+        }
+
+        @media (min-width: map-get($MEDIA, LG)) {
+            font-size: 18px;
+        }
+    }
 }

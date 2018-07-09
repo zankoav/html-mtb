@@ -1,0 +1,34 @@
+@import './../constants';
+
+.nakovalny{
+    position: absolute;
+    top: 184vw;
+    left: 0;
+    width: 70%;
+
+    @media (min-width: map-get($MEDIA, SM)) {
+        top: 112vw;
+        width: 60%;
+    }
+
+    @media (min-width: map-get($MEDIA, MD)) {
+        top: 61vw;
+        width: 50%;
+    }
+
+    @media (min-width: map-get($MEDIA, LG)) {
+        top: 46vw;
+    }
+
+    @media (min-width: map-get($MEDIA, LLG)) {
+        top: 43vw;
+    }
+
+    @media (min-width: map-get($MEDIA, HD)) {
+        top: 28vw;
+    }
+
+    @media (min-width: map-get($MEDIA, XL)) {
+        top: 20vw;
+    }
+}

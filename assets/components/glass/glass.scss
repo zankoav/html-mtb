@@ -1,0 +1,18 @@
+@import './../constants';
+
+.glass{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: scroll;
+    background-color: rgba(10,23,36,.8);
+    display: none;
+    justify-content: center;
+    z-index: 1000;
+
+    @media (min-width: map-get($MEDIA, SM)) {
+        align-items: center;
+    }
+}

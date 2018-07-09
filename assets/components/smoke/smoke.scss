@@ -1,0 +1,32 @@
+@import './../constants';
+
+.smoke{
+    position: absolute;
+    top: 188vw;
+    left: 0;
+    width: 100%;
+
+    @media (min-width: map-get($MEDIA, SM)) {
+        top: 113vw;
+    }
+
+    @media (min-width: map-get($MEDIA, MD)) {
+        top: 54vw;
+    }
+
+    @media (min-width: map-get($MEDIA, LG)) {
+        top: 40vw;
+    }
+
+    @media (min-width: map-get($MEDIA, LLG)) {
+        top: 37vw;
+    }
+
+    @media (min-width: map-get($MEDIA, HD)) {
+        top: 22vw;
+    }
+
+    @media (min-width: map-get($MEDIA, XL)) {
+        top: 15vw;
+    }
+}

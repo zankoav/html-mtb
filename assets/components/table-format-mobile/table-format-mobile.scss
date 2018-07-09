@@ -1,0 +1,116 @@
+@import './../constants';
+
+.table-format-mobile {
+
+    font-size: 12px;
+    margin-top: 1.5rem;
+    color: $DARK-GRAY;
+
+    @media (min-width: map_get($MEDIA, SM)) {
+        display: none;
+    }
+
+    &__item-right-selected {
+        flex: 1;
+        border: 1px solid $DARK;
+        border-radius: 4px;
+        padding: .25rem;
+
+        div {
+            display: flex;
+            flex-direction: column;
+            span {
+                text-transform: lowercase;
+                line-height: 1;
+                color: $DARK-GRAY;
+            }
+        }
+
+
+        &::after {
+            content: ' ';
+            display: block;
+            pointer-events: none;
+            border-style: solid;
+            border-width: 5px 5px 0;
+            border-color: $DARK transparent transparent;
+            position: absolute;
+            top: 12px;
+            right: 10px;
+            z-index: 1;
+        }
+
+    }
+
+    &__item-right-options {
+        display: none;
+        position: absolute;
+        min-width: calc(100% - 4px);
+        border: 1px solid $DARK;
+        border-radius: 4px;
+        background-color: $WHITE;
+        z-index: 1;
+
+        div {
+            padding: .25rem;
+            display: flex;
+            flex-direction: column;
+            span {
+                text-transform: lowercase;
+                line-height: 1;
+                color: $DARK-GRAY;
+            }
+
+            border-bottom: 1px solid $GREY-LL;
+
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+    }
+
+    &__item {
+        display: flex;
+        &:nth-child(even) {
+            background-color: $GREY-LL;
+        }
+
+        &:first-child {
+            text-transform: uppercase;
+        }
+
+        &--header>p{
+            padding-bottom: 0;
+            padding-top: .25rem;
+        }
+    }
+
+    &__item-left {
+        max-width: 45%;
+        flex: 1 0 45%;
+        padding: .25rem .75rem .25rem .25rem;
+    }
+
+    &__item-right {
+        max-width: 55%;
+        flex: 1 0 55%;
+        padding: .25rem;
+
+        p {
+            display: none;
+        }
+
+        &-active {
+            display: flex !important;
+            align-items: flex-start;
+        }
+
+        &-header {
+            position: relative;
+            min-height: 46px;
+            padding-bottom: 0;
+            padding-right: 0;
+            padding-top: 0;
+        }
+    }
+}

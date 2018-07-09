@@ -1,0 +1,65 @@
+@import './../constants';
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__link {
+        height: 33px;
+        display: block;
+
+        @media (min-width: map-get($MEDIA, SM)) {
+            height: 48px;
+        }
+    }
+    &__logo {
+        height: 125%;
+
+        @media (min-width: map-get($MEDIA, SM)) {
+            height: 100%;
+        }
+    }
+
+    &__contacts {
+        cursor: pointer;
+        width: 40px;
+        height: auto;
+        border-radius: 50%;
+        transition: all 1s;
+    }
+
+    &__contacts-wrapper {
+        display: flex;
+        align-items: center;
+        background-color: transparent;
+        border-radius: 20px;
+        overflow: hidden;
+        transition: background-color 1s;
+
+        &--activated {
+
+            background-color: $WHITE;
+
+            .header__contacts {
+                transform: rotate(-360deg);
+                background-color: $DARK-BLUE;
+            }
+
+            .header__contacts-phone {
+                opacity: 1;
+                width: 200px;
+                padding: 0 1rem;
+            }
+        }
+    }
+
+    &__contacts-phone {
+        color: $DARK-BLUE;
+        font-size: 18px;
+        white-space: nowrap;
+        opacity: 0;
+        width: 0;
+        transition: all 1s;
+    }
+}

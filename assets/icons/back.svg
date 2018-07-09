@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="16px" viewBox="0 0 10 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>&gt;</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M0.284403644,1.34191102 L1.71559636,-0.0892816928 L7.71559636,5.91071831 L1.53703297,12.0892817 L0.105840258,10.658089 L4.85321093,5.91071831 L0.284403644,1.34191102 Z" id="path-1"></path>
+        <filter x="-32.2%" y="-12.7%" width="164.3%" height="150.7%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.123188406 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Category-Mobile-Portrait" transform="translate(-27.000000, -110.000000)">
+            <g id="&gt;" transform="translate(32.000000, 117.000000) scale(-1, 1) translate(-32.000000, -117.000000) translate(28.000000, 111.000000)">
+                <g id="Combined-Shape">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#004F9E" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
