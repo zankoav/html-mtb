@@ -4,19 +4,41 @@
     position: absolute;
     right: 0;
     top: -107px;
-    width: 550px;
-    max-width: initial;
+    height: 400px;
+    width: 100%;
+    overflow: hidden;
+
+    &__img{
+        position: absolute;
+        right: 0;
+        width: 550px;
+        max-width: initial;
+    }
 
     @media (min-width: map-get($MEDIA, SM)) {
-        top: -149px;
-        right: -65px;
-        width: 100%;
+        top: -146px;
+        right: 0;
+        height: 400px;
+
+        &__img{
+            right: -50px;
+            width: 750px;
+            max-width: initial;
+        }
+
     }
 
     @media (min-width: map-get($MEDIA, MD)) {
         right: 0;
         top: -160px;
         width: 80%;
+        height: initial;
+
+        &__img{
+            position: initial;
+            width: initial;
+            max-width: 100%;
+        }
     }
 
     @media (min-width: map-get($MEDIA, LG)) {
