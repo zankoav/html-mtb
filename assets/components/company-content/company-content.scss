@@ -37,7 +37,7 @@
         align-items: center;
         padding: 2rem;
         margin-top: 2rem;
-        min-height: 200px;
+        height: 200px;
     }
 
     &__contacts-wrapper {
@@ -73,7 +73,7 @@
 
         @media (min-width: map_get($MEDIA, SM)) {
             padding-top: 2.75rem;
-            padding-left: 1.75rem;
+            padding-left: 3rem;
         }
     }
 
@@ -90,6 +90,9 @@
 
     &__payment {
         margin-bottom: 1rem;
+        @media (min-width: map_get($MEDIA, SM)) {
+            margin-top: 6.3rem;
+        }
     }
 
     &__about-company, &__about-products {

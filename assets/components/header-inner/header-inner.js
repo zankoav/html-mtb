@@ -8,8 +8,7 @@ $('.header-inner__mobile-back-to-catalog').click(function (event) {
     $('body').fadeOut(300, function () {
         $('.catalog-company, .header-inner__title, .header-inner__mobile-back-to-catalog, .header-inner__icon').remove();
         $('.catalog').removeClass('catalog--no-mobile');
-        $('.category').removeClass('category--small');
-
+        $('.category').removeClass('category--small').css('border','1px solid #fff');
         $(this).fadeIn(300);
     });
 

@@ -3,7 +3,24 @@
 .slider-second {
     display: flex;
     align-items: center;
-    margin-top: 200px;
+    padding-top: 200px;
+
+
+    &__line-gradient{
+        position: relative;
+        &::before{
+            position: absolute;
+            content: '';
+            display: block;
+            top: 100px;
+            padding: 100px 0;
+            width: 100%;
+            border-top: 1px solid $GREY-LL;
+            background: linear-gradient(to bottom, $WHITE, transparent);
+            z-index: 0;
+
+        }
+    }
 
     @media (min-width: map_get($MEDIA, MD)) {
         align-items: flex-end;
@@ -14,6 +31,8 @@
     }
 
     &__footer {
+        position: relative;
+        z-index: 10;
         margin-top: 6rem;
         margin-bottom: 10rem;
         @media (min-width: map_get($MEDIA, SM)) {

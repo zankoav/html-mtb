@@ -39,9 +39,9 @@
 
     &--big {
         border: 1px solid white;
-        transition: border-color .4s ease-out;
+        transition: all .4s ease-out;
         &:hover {
-            border-color: $RED;
+            transform: scale(1.025);
         }
     }
 
