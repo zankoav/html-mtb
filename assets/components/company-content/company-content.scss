@@ -57,6 +57,7 @@
         &::before {
             content: 'Телефон:';
             display: block;
+            font-weight: 600;
         }
     }
 
@@ -65,6 +66,7 @@
         &::before {
             content: 'Сайт компании:';
             display: block;
+            font-weight: 600;
         }
     }
 
@@ -106,6 +108,7 @@
             content: 'О компании:';
             display: block;
             font-size: 18px;
+            font-weight: 600;
             color: $DARK-GRAY;
             margin: 1rem 0;
 
@@ -119,6 +122,7 @@
     &__about-products {
         margin-bottom: 3rem;
         &::before {
+            font-weight: 600;
             content: 'О товарах:';
         }
     }

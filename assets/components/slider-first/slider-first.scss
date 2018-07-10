@@ -4,7 +4,28 @@
 .slider-first {
     display: flex;
     align-items: flex-end;
-    margin-top: 200px;
+    padding-top: 200px;
+
+    &__line-gradient{
+        position: relative;
+        &::before{
+            position: absolute;
+            content: '';
+            display: block;
+            top: 100px;
+            padding: 100px 0;
+            width: 100%;
+            border-top: 1px solid $GREY-LL;
+            background: linear-gradient(to bottom, $WHITE, transparent);
+            z-index: 0;
+
+        }
+        @media (min-width: map_get($MEDIA, SM)) {
+            &::before{
+                display:none;
+            }
+        }
+    }
 
     @media (min-width: map_get($MEDIA, LG)) {
         margin-top: 350px;
@@ -39,7 +60,7 @@
         flex: 1 0 30%;
         border-left: 2px solid $GRAY-LIGHT;
         padding-left: 2rem;
-        height: 130px;
+        height: 180px;
         justify-content: center;
         flex-direction: column;
         margin-bottom: 4rem;
@@ -134,7 +155,7 @@
 
         &__img-M {
             display: block;
-
+            width: 100%;
             @media (min-width: map_get($MEDIA, SM)) {
                 display: none;
             }

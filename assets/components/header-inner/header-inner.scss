@@ -48,7 +48,7 @@
     &__title {
         color: $WHITE;
         font-size: 33px;
-        font-weight: normal;
+        font-weight: 600;
         text-transform: uppercase;
         max-width: 50%;
         line-height: 1;
@@ -86,6 +86,7 @@
     &__subtitle {
         font-size: 20px;
         color: $DARK-BLUE;
+        font-weight: bold;
         text-transform: uppercase;
         @media (min-width: map-get($MEDIA, MD)) {
             font-size: 26px;
@@ -135,7 +136,7 @@
             width: 33px;
             height: 33px;
             font-size: 36px;
-            padding-bottom: 6px;
+            padding-bottom: 2px;
             flex: 1 0 33px;
             margin-right: 1.5rem;
             color: $WHITE;
