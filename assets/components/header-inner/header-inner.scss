@@ -8,9 +8,13 @@
     position: relative;
 
     &--main {
-        background: url("./../../icons/main-back.png") no-repeat;
-        background-size: cover;
+        background: url("./../../icons/animation/mobile-header.png") no-repeat;
+        background-size: contain;
 
+        @media (min-width: map-get($MEDIA, SM)) {
+            background: url("./../../icons/main-back.png") no-repeat;
+            background-size: cover;
+        }
     }
 
     &__wrapper {
@@ -105,7 +109,7 @@
     }
 
     &__offer {
-        margin: 40rem 0 5rem;
+        margin: 30rem 0 5rem;
 
         @media (min-width: map-get($MEDIA, SM)) {
             margin: 2rem 0 5rem;

@@ -5,7 +5,7 @@ let $glass = $('.glass');
 const titles = {
     seller: "Стать партнером",
     buyer: "Стать клиентом"
-}
+};
 
 $glass.click(function (event) {
     if (event.target === this) {
@@ -17,6 +17,12 @@ $glass.click(function (event) {
     }
 });
 
+$('.modal__close').click(function () {
+    $glass.fadeOut(function () {
+        $(".modal")[0].reset();
+        $(".modal").find('.modal__message-after').replaceWith('<button class="modal__item-button modal__item-button--blue" type="submit">Отправить</button>' );
+    });
+});
 
 $(document).keyup(function (e) {
     if (e.keyCode === 27) {
@@ -26,6 +32,8 @@ $(document).keyup(function (e) {
         });
     }
 });
+
+
 
 $('.buttons__item[data-type]').click(function (event) {
     event.preventDefault();

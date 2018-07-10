@@ -9,7 +9,7 @@
         align-items: flex-end;
     }
 
-    .swiper-container-horizontal>.swiper-pagination-bullets{
+    .swiper-container-horizontal > .swiper-pagination-bullets {
         bottom: 40px;
     }
 
@@ -77,6 +77,11 @@
             display: none;
         }
 
+        &_animate {
+            animation: show .3s ease-in;
+            animation-fill-mode: forwards;
+        }
+
         @media (min-width: map_get($MEDIA, MD)) {
             font-size: 24px;
 
@@ -90,6 +95,7 @@
 
     &__title-text {
         width: 80%;
+
     }
 
     &__arrow {
@@ -199,5 +205,14 @@
 
     .swiper-container {
         padding-bottom: 3rem;
+    }
+}
+
+@keyframes show {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }

@@ -51,6 +51,18 @@ $(".modal").on("submit", function (event) {
         postData[d.name] = d.value;
     }
 
+    if(!$('#agree').prop('checked')){
+        let $span = $('[for="agree"].modal__item-label');
+        $span.addClass('modal__item-label--error');
+
+        setTimeout(function () {
+            $span.removeClass('modal__item-label--error');
+        }, 3000);
+
+
+        return;
+    }
+
     $(this).find('button').fadeOut(400, function () {
         $(this).replaceWith( "<span class='modal__message-after'>Ваша форма отправлена</span>" );
         $('.modal__message-after').fadeIn(400);

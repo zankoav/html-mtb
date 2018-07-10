@@ -31,6 +31,7 @@ $('.slider-second__arrow').click(function () {
 });
 
 function changeRout() {
+
     $('.slider-second__rout-wrapper').fadeOut(300, function () {
 
         $(this)
@@ -42,7 +43,19 @@ function changeRout() {
             .parent()
             .addClass('slider-second__title_deactivated');
 
-        $(this).fadeIn(300);
+        let $items = $(".slider-second__title").removeClass('slider-second__title_animate').not(".slider-second__title_deactivated").css('opacity', 0);
+        console.log($items.length);
+        
+        $(this).fadeIn(0, function () {
+
+            for (let i = 0; i < $items.length; i++) {
+                setTimeout(function () {
+                    $($items[i]).addClass('slider-second__title_animate');
+                }, 4 + 300 * i);
+            }
+
+        });
+
     });
 
 }

@@ -6,7 +6,7 @@
     align-items: center;
 
     &__link {
-        height: 33px;
+        height: 30px;
         display: block;
 
         @media (min-width: map-get($MEDIA, SM)) {
@@ -14,11 +14,7 @@
         }
     }
     &__logo {
-        height: 125%;
-
-        @media (min-width: map-get($MEDIA, SM)) {
-            height: 100%;
-        }
+        height: 100%;
     }
 
     &__contacts {
@@ -27,6 +23,7 @@
         height: auto;
         border-radius: 50%;
         transition: all 1s;
+        background-color: rgba($DARK-BLUE, .5);
     }
 
     &__contacts-wrapper {
