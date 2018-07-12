@@ -12,7 +12,7 @@
         background-size: contain;
 
         @media (min-width: map-get($MEDIA, SM)) {
-            background: url("./../../icons/main-back.png") no-repeat;
+            background: url("./../../icons/main-back.min.png") no-repeat;
             background-size: cover;
         }
     }

@@ -6,6 +6,10 @@
     left: 0;
     width: 100%;
 
+    img{
+        width: 100%;
+    }
+
     @media (min-width: map-get($MEDIA, SM)) {
         top: 113vw;
     }

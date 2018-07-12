@@ -50,3 +50,11 @@ $(".buttons__item--gray").click(function (event) {
     }, 1600);
 });
 
+$('.buttons__item[data-scroll]').click(function (event) {
+    event.preventDefault();
+    let scrollTo = $(this).data('scroll');
+    $('html, body').animate({
+        scrollTop: $(`[data-slider=${scrollTo}]`).offset().top + 100
+    }, 1600);
+});
+
